@@ -14,6 +14,8 @@ provider "aws" {
 # --- STORAGE ---
 resource "aws_s3_bucket" "job_scraper_data" {
   bucket = "dbonney-job-scraper-data"
+  # Add force_destroy to S3
+  force_destroy  = true  # <--- Add this
 }
 
 resource "aws_s3_bucket_ownership_controls" "example" {
@@ -75,6 +77,8 @@ resource "aws_route_table_association" "a2" {
 # --- REGISTRY ---
 resource "aws_ecr_repository" "scraper" {
   name                 = "job-scraper"
+  # Add force_delete to ECR
+  force_delete         = true  # <--- Add this
   image_tag_mutability = "MUTABLE"
   image_scanning_configuration { scan_on_push = true }
 }
