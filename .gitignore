@@ -1,12 +1,16 @@
-# Terraform temporary files
-.terraform/
-*.tfstate
-*.tfstate.*
-.terraform.lock.hcl
-
-# Python junk
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 venv/
 .env
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+tfplan
+
+# OS
+.DS_Store
