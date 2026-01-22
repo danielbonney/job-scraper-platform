@@ -1,7 +1,3 @@
-To maintain your standard of operational rigor, I’ve cleaned up the text by removing the source tags while preserving the professional, high-level engineering tone you established.
-
-Below is the clean version of your Project Proposal and Implementation Roadmap, ready for your README.md or a clean document.
-
 Project Proposal: Job Scraper
 Author: Daniel Bonney
 
